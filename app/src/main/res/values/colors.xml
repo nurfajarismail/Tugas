@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="hijau_glow">#19C520</color>
+    <color name="pink">#F382A8</color>
+    <color name="kuning_gelap">#CEDCBE</color>
+    <color name="hijau_pudar">#77B57A</color>
+</resources>
