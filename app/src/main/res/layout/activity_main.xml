@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="735dp"
+        android:background="@color/kuning_gelap"
+
+
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+
+            android:layout_margin="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/hijau_pudar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="100dp"
+                android:text="@string/pendaftaran"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                android:gravity="center_horizontal"  />
+
+            <TableRow
+                android:id="@+id/row1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              >
+
+                <EditText
+                    android:id="@+id/id_namadepan"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:hint="@string/nama_depan"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/id_namabelakang"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:hint="@string/nama_belakang"
+                    android:textSize="17sp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/id_tempatlahir"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:hint="@string/tempat_lahir"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/idtanggallahir"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:ems="10"
+                    android:hint="@string/tanggal_lahir"
+                    android:textSize="17sp"/>
+
+
+            </TableRow>
+
+            <EditText
+                android:id="@+id/id_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="@string/alamat"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:text="@string/Jenis_Kelamin"
+                android:textSize="20sp" />
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/jk_laki"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="215dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/jk_perempuam"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="215dp" />
+            </RadioGroup>
+
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:text="@string/agama"
+                android:textSize="20sp" />
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/jk"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/agama_islam"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="215dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/agama_katolik"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="215dp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/jk"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/agama_buddha"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="215dp" />
+
+            <RadioButton
+            android:id="@+id/radioButton6"
+                android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/agama_kristen"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="215dp" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/agama_hindu"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="215dp" />
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/agama_kong"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="215dp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/agama_ak"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="215dp" />
+
+
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/id_telepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="phone"
+                android:ems="10"
+                android:hint="@string/telepon"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/id_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"
+                android:textSize="17sp" />
+            <EditText
+                android:id="@+id/id_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="@string/password" />
+            <EditText
+                android:id="@+id/id_passlagi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="@string/mk_pass" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+
+            <TableRow
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btnkembali"
+                    android:layout_width="150dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="100sp"
+                    android:background="@drawable/buttton"
+
+
+                    android:text="@string/kembali"/>
+
+                <Button
+                    android:id="@+id/btn_daftar"
+                    android:layout_width="150dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="100sp"
+                    android:background="@drawable/buttton"
+
+                    android:text="@string/dafrat" />
+
+
+
+
+            </TableRow>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

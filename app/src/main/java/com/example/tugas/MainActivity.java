@@ -136,102 +136,21 @@ public class MainActivity extends AppCompatActivity {
         validation.addValidation(this, R.id.id_passlagi,
                 R.id.id_pass, R.string.invalid_ulangi);
 
+        btndaftar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (namaDpn.length() == 0 || namaBlkng.length()==0||
+                tempat.length() == 0||alamat.length()==0){
+                    startActivity(new Intent(MainActivity.this, detail.class));
+                    Toast.makeText(getApplicationContext(),"bisa sign in",Toast.LENGTH_SHORT).show();
+                }
+                else{}
+
+            }
+        });
 
 
 
 
-//        btndaftar.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View view){
-//                showDialog();
-//                if (validation.validate()){
-//                   ;
-//                }
-//                else{
-//                    Toast.makeText(getApplicationContext(),
-//                            "Mohon Isi Data Yang Kosong",Toast.LENGTH_SHORT).show();
-//                }
-//            }
-//        });
-//
-//        btnkembali.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v){
-//                finish();
-//                System.exit(0);
-//            }
-//        });
-//    }
-//
-//    private void showDialog() {
-//        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-//
-//        // set title dialog
-//        alertDialogBuilder.setTitle("Konfirmasi...");
-//
-//        // set pesan dari dialog
-//        alertDialogBuilder
-//                .setMessage("Apakah data yang anda masukkan sudah benar?")
-//                .setIcon(R.mipmap.ic_launcher)
-//                .setCancelable(false)
-//                .setPositiveButton("Ya",new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog,int id) {
-//                            showDetailPendaftaran();
-//                    }
-//                })
-//                .setNegativeButton("Tidak",new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int id) {
-//                        // jika tombol ini diklik, akan menutup dialog
-//                        // dan tidak terjadi apa2
-//                        dialog.cancel();
-//                    }
-//                });
-//
-//        // membuat alert dialog dari builder
-//        AlertDialog alertDialog = alertDialogBuilder.create();
-//
-//        // menampilkan alert dialog
-//        alertDialog.show();
-//    }
-//
-//    private void showDetailPendaftaran(){
-//        final Dialog dialog = new Dialog(this);
-//        //AlertDialog.Builder dialog2 = new AlertDialog.Builder(this);
-//
-//        //judul dialog
-//        dialog.setTitle("Detail Pendaftaran");
-//
-//        //memilih layout
-//        dialog.setContentView(R.layout.activity_detail);
-//
-//        //agar dialog tidak hilang saat di click di area luar dialog
-//        dialog.setCanceledOnTouchOutside(false);
-//
-//        DisplayMetrics metrics = getResources().getDisplayMetrics();
-//        int width = metrics.widthPixels;
-//        dialog.getWindow().setLayout((6 * width) / 7, LinearLayout.LayoutParams.WRAP_CONTENT);
-//
-//        Button btnKeluar = (Button) dialog.findViewById(R.id.keluar);
-//        Button btnOke = (Button) dialog.findViewById(R.id.oke);
-//
-//        btnOke.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public  void onClick(View v) {
-//                Toast.makeText(MainActivity.this, "Data saved", Toast.LENGTH_SHORT).show();
-//                dialog.dismiss();
-//            }
-//        });
-//
-//        btnKeluar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                finish();
-//                System.exit(0);
-//            }
-//        });
-//
-//        //menampilkan custom dialog
-//        dialog.show();
-//        //dialog2.show();
-////    }
+
     }}
